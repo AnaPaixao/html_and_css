@@ -1,0 +1,80 @@
+@mixin responsive($screenWidth) {
+    @media (max-width: $screenWidth) {
+        @content;
+    }
+}
+
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin style-btn($height, $bg, $colorText) {
+    display: inline-block;
+    height: $height;
+    line-height: $height;
+    background-color: $bg;
+    border-radius: 6px;
+    padding: 0 5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: $colorText;
+        color: $bg;
+    }
+}
+
+@mixin h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 130%;
+    color: #FFFFFF;
+
+    width: 74.0rem;
+}
+
+@mixin h2 {
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: #242424;
+}
+
+@mixin h3 {
+    font-family: 'Montserrat', sans-serif;  
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 130%;
+    color: #616161;
+}
+
+@mixin h4 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #242424;
+}
+
+@mixin text-18 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@mixin text-16 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #616161;
+}

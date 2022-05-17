@@ -1,0 +1,36 @@
+html {
+   scroll-behavior: smooth;
+
+}
+
+footer{
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   padding: 5px;
+   line-height: 15px; /*padrão 50*/
+   background-color: rgb(177, 177, 177);
+}
+
+footer a {
+   color: var(--secondary);
+}
+
+.container-footer {
+   padding-top: 15px;
+}
+
+footer a:hover {
+   color: var(--primary);
+   text-decoration: none;
+}
+
+.container-footer p {
+   margin-top: 12px;
+   margin-bottom: 20px;
+}
+
+
+ 
+ 

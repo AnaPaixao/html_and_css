@@ -1,0 +1,175 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Text', sans-serif;
+  background-image: url(./../../images/bg-stars.svg);
+  background-color: #1e1f29;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+  font-size: 0.875rem;
+}
+
+main img.hills {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
+
+main h1 {
+  font-size: 0.875rem;
+  color: #FFF;
+  letter-spacing: 10px;
+  margin-top: 60px;
+}
+
+main p {
+  color: #8486a9;
+  letter-spacing: 5px;
+}
+
+main .countdown {
+  width: 43.125rem;
+  position: absolute;
+  top: 185px;
+}
+
+main .countdown div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .countdown div .div-up {
+  width: 8.125rem;
+  height: 4.0625rem;
+  background: #2d2f44;
+  border-radius: 5px 5px 10px 10px;
+}
+
+main .countdown div .div-down {
+  width: 8.125rem;
+  height: 4.0625rem;
+  background: #343650;
+  border-radius: 10px 10px 5px 5px;
+  -webkit-box-shadow: 0px 10px 2px #191a24;
+          box-shadow: 0px 10px 2px #191a24;
+}
+
+main .countdown div span {
+  position: absolute;
+  top: 8px;
+  color: #fb6087;
+  font-size: 5.3125rem;
+}
+
+main .icons {
+  width: 8.125rem;
+  position: absolute;
+  bottom: 50px;
+}
+
+main .icons a i {
+  color: #8486a9;
+}
+
+main .icons a i:hover {
+  color: #fb6087;
+}
+
+main .attribution {
+  z-index: 10;
+}
+
+@media (max-width: 480px) {
+  main img.hills {
+    height: 25vh;
+  }
+  main h1 {
+    text-align: center;
+  }
+  main .countdown {
+    width: 340px;
+  }
+  main .countdown div p {
+    font-size: 8px;
+  }
+  main .countdown div .div-up {
+    width: 70px;
+    height: 35px;
+  }
+  main .countdown div .div-down {
+    width: 70px;
+    height: 35px;
+  }
+  main .countdown div span {
+    font-size: 35px;
+    top: 12px;
+  }
+  main .icons {
+    bottom: 45px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,77 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    font-size: $font-sm;
+    
+    img.hills {
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+    }
+
+    h1 {
+        font-size: $font-sm;
+        color: #FFF;
+        letter-spacing: 10px;
+        margin-top: 60px;
+    } 
+
+    p {
+        color: $grayishBlue;
+        letter-spacing: 5px;
+    }
+
+    .countdown {
+        width: 43.125rem; // 690px
+        position: absolute;
+        top: 185px;
+    }
+
+    .countdown div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countdown div .div-up {
+        width: 8.125rem; // 130px
+        height: 4.0625rem; // 75px
+        background: rgb(45, 47, 68);
+        border-radius: 5px 5px 10px 10px;
+    }
+
+    .countdown div .div-down {
+        width: 8.125rem; // 130px
+        height: 4.0625rem; // 75px
+        background: $darkDesaturatedBlue;
+        border-radius: 10px 10px 5px 5px;
+        box-shadow: 0px 10px 2px $veryDark;
+    }
+
+    .countdown div span {
+        position: absolute;
+        top: 8px;
+        color: $softRed;
+        font-size: 5.3125rem; //90px
+    }
+
+    .icons {
+        width: 8.125rem; // 130px
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .icons a i {
+        color: $grayishBlue;
+    }
+
+    .icons a i:hover {
+        color: $softRed;
+    }
+
+    .attribution {
+        z-index: 10;
+    }
+
+}

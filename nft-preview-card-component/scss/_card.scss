@@ -1,0 +1,155 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    width: 35.5rem;
+    height: 60.1rem;
+
+    background-color: $very-dark-blue-card;
+
+    padding: 2rem;
+
+    border-radius: 1.5rem;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    .equilibrium {
+        width: 40rem;
+        height: 30.6rem;
+
+        border-radius: 1rem;
+    }
+
+    .view-container {
+        @include flex (row, center, center);
+        
+        position: absolute;
+
+        width: 31.3rem;
+        height: 30.6rem;
+
+        border-radius: 1rem;
+
+        background-color: rgba(0, 255, 247, 0.4);
+
+        opacity: 0;
+
+        cursor: pointer;
+
+        transition: ease-in-out 0.4s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-top: 3rem;
+
+            font-size: 2.3rem;
+            font-weight: 600;
+
+            color: $white;
+
+            cursor: pointer;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+
+        p {
+            margin-top: 2rem;
+
+            font-size: 1.8rem;
+            font-weight: 300;
+
+            color: $soft-blue;
+        }
+
+        div {
+            @include flex (row, center, space-between);
+
+            margin-top: 3rem;
+
+            h3, p {
+                display: flex;
+                align-items: center;
+
+                font-size: 1.6rem;
+
+                img {
+                    margin-right: 0.5rem;
+                }
+            }
+
+            h3 {
+                color: $cyan;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        hr {
+            border: 1px solid $very-dark-blue-line;
+            margin-top: 2rem;
+        }
+
+        .profile {
+            @include flex (row, center, start);
+            
+            margin-top: 1.5rem;
+
+            img {
+                width: 3.4rem;
+                height: 3.4rem;
+
+                border: 1.5px solid $white;
+                border-radius: 50%;
+            }
+
+            p {
+                margin-left: 1rem;
+
+                span {
+                    font-weight: 600;
+                    color: $white;
+
+                    margin-left: 0.4rem;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $cyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 3rem;
+
+    margin-top: 5rem;
+
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    color: $soft-blue;
+
+    a {
+        color: $cyan;
+    }
+}

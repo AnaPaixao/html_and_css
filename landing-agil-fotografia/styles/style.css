@@ -1,0 +1,46 @@
+/* BOAS PRÁTICAS - PADRÕES DE COMENTÁRIOS */
+
+
+/* ==========================================================================
+   Bloco de comentário de seção
+   ========================================================================== */
+
+/* Bloco de comentário de sub-seção
+   ========================================================================== */
+
+/*
+ * Bloco de comentário de grupo
+ * Ideal para explicações em múltiplas linhas e documentação.
+ */
+
+/**
+ * Breve descrição usando o estilo de formato de comentário Doxygen
+ *
+ * A primeira frase da descrição longa começa aqui e continua
+ * nesta linha por um tempo finalmente concluindo aqui no final deste parágrafo.
+ *
+ * A descrição longa é ideal para explicações mais detalhadas e documentação.
+ * Ele pode incluir HTML exemplo, URLs, ou qualquer outra informação
+ * que seja considerada necessária ou útil.
+ */
+
+
+/* Comentário básico */
+
+
+/* ========================================================================== */
+@import url('cabecalho.css');
+@import url('variaveis.css');
+@import url('cores.css');
+@import url('barra-topo.css');
+@import url('menu-lateral.css');
+@import url('secao-todas.css');
+@import url('secao1-carousel.css');
+@import url('secao2-pilares.css');
+@import url('secao3-modulos.css');
+@import url('secao4-recomendacoes.css');
+@import url('secao5-formulario.css');
+@import url('breakpoints.css');
+
+/* Podem colocar suas classes css aqui ou importar um novo arquivo acima */
+

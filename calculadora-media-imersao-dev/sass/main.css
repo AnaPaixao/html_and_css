@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*Colors*/
+.container {
+  width: 65%;
+  max-width: 132.1rem;
+  height: 100%;
+  max-height: 50rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  border-radius: 10px;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #264653;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3.7rem;
+  color: #fff;
+  margin-top: 5rem;
+}
+
+body > p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #F4A261;
+  margin-top: 3rem;
+}
+
+body .imersao-dev {
+  margin-top: 4rem;
+}
+
+body .logo-alura {
+  position: absolute;
+  top: 5rem;
+  right: 6rem;
+}
+
+body .info {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+body .obs {
+  margin-bottom: 2rem;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  margin-top: 5rem;
+  position: relative;
+}
+
+body .container .grades {
+  width: 50%;
+  height: 100%;
+  max-height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  position: relative;
+}
+
+body .container .grades form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  height: 90%;
+  max-height: 44rem;
+  position: relative;
+}
+
+body .container .grades form h3 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #000;
+  position: absolute;
+  left: 170px;
+  bottom: 420px;
+}
+
+body .container .grades form .form-input {
+  position: relative;
+  width: 80%;
+  height: 5.5rem;
+  background: #F3F3F3;
+  border-radius: 10px;
+}
+
+body .container .grades form .form-input span {
+  position: absolute;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #8E8E8E;
+  left: 2rem;
+  top: 1.5rem;
+  padding-right: 1rem;
+  border-right: 1px solid #8E8E8E;
+}
+
+body .container .grades form .form-input input {
+  width: 38rem;
+  height: 5.5rem;
+  background: #F3F3F3;
+  border-radius: 10px;
+  margin-left: 7rem;
+  padding-right: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  overflow: auto;
+}
+
+body .container .grades form .form-input input::-webkit-outer-spin-button,
+body .container .grades form .form-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body .container .grades form .form-input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body .container .result {
+  width: 50%;
+  height: 100%;
+  max-height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .result div {
+  width: 54.5rem;
+  height: 44rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  margin-right: 3.5rem;
+}
+
+body .container .result div h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+body .container .result div span {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.3rem;
+}
+
+body .container .result div p {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-align: center;
+  width: 29rem;
+}
+
+@media (max-width: 1920px) {
+  body .container .grades form h3 {
+    bottom: 40rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  body .container {
+    width: 80%;
+  }
+  body .container .result div {
+    width: 50rem;
+    height: 44rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  body .container .grades form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 1280px) {
+  body .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1150px) {
+  body .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  body .container {
+    height: 100rem;
+    max-height: 100rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .container .grades {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  body .container .grades form {
+    width: 44rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .container .grades form h3 {
+    bottom: 360px;
+  }
+  body .container .result {
+    width: 80%;
+    height: 60rem;
+  }
+  body .container .result div {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 800px) {
+  body #myModal .modal-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  body .container {
+    margin: 2rem 0 0 0;
+  }
+  body .logo-alura {
+    right: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  body .info {
+    display: none;
+  }
+  body .logo-alura {
+    top: 2rem;
+    left: 15rem;
+  }
+  body h1 {
+    margin-top: 8rem;
+  }
+  body p {
+    text-align: center;
+  }
+  body .container {
+    width: 95%;
+  }
+  body .container .grades {
+    width: 95%;
+  }
+  body .container .grades form {
+    width: 100%;
+  }
+  body .container .grades form h3 {
+    left: 130px;
+  }
+  body .container .grades form .form-input {
+    width: 95%;
+  }
+  body .container .grades form .form-input input {
+    width: 83%;
+  }
+  body .container .result {
+    width: 95%;
+  }
+  body .container .result div {
+    width: 100%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(8, 8, 8, 0.8);
+}
+
+.modal .modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #264653;
+  margin: 10% auto;
+  padding: 6.3rem 6.9rem 7.3rem 6.9rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 74.9rem;
+  height: 33.3rem;
+}
+
+.modal .modal-content .close {
+  position: absolute;
+  right: 2.2rem;
+  top: 1rem;
+  color: #E76F51;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  color: #F40000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .modal-content h3 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #F4A261;
+}
+
+.modal .modal-content p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #F4A261;
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=main.css.map */

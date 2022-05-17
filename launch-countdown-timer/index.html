@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="app/scss/style.css">
+  
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="flex flex-fd-c flex-ai-c flex-jc-sb">
+
+    <img src="./images/pattern-hills.svg" alt="" class="hills">
+
+    <h1>WE'RE LAUNCHING SOON</h1>
+
+    <div class="countdown flex flex-jc-sa">
+      <div class="days">
+        <div class="div-up">
+        </div>
+        <span id="day"></span>
+        <div class="div-down">
+        </div>
+        <p>DAYS</p>
+      </div>
+      <div class="hours">
+        <div class="div-up">
+        </div>
+        <span id="hour"></span>
+        <div class="div-down">
+        </div>
+        <p>HOURS</p>
+      </div>
+      <div class="minutes">
+        <div class="div-up">
+        </div>
+        <span id="minute"></span>
+        <div class="div-down">
+        </div>
+        <p>MINUTES</p>
+      </div>
+      <div class="seconds">
+        <div class="div-up">
+        </div>
+        <span id="second"></span>
+        <div class="div-down">
+        </div>
+        <p>SECONDS</p>
+      </div>
+    </div>
+
+    <div class="icons flex flex-jc-sb">
+      <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+      <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/AnaPaixao?tab=repositories" target="_blank">Ana</a>.
+    </div>
+
+  </main>
+
+  <script src="./app/js/script.js"></script>
+</body>
+</html>

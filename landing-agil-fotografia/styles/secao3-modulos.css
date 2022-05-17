@@ -1,0 +1,33 @@
+#modulos>div img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#modulos>div>div {
+    padding: 6%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#modulos .card.mb-5 {
+    min-height: 500px;
+    max-width: 500px;
+}
+
+#modulos [data-toggle="modal"] {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#modal a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#modal a:hover {
+    color: var(--primary);
+}

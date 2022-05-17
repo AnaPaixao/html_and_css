@@ -1,0 +1,569 @@
+.hero {
+    width: 100%;
+    height: 70.0rem;
+
+    background-image: url(../img/img-bg.svg);
+    background-position: center;
+
+    margin-top: 7.2rem;
+    padding: 0.5rem;
+
+    .container {
+        height: 100%;
+        
+        span {
+            width: 5.4rem;
+            height: 2.6rem;
+
+            background: #006D8F;
+
+            border-radius: 120px;
+
+            font-weight: 500;
+            font-size: 1.3rem;
+
+            line-height: 1.6rem;
+            text-align: center;
+
+            color: #FFFFFF;
+
+            padding: 0.2rem 0.8rem;
+            margin-right: 1.2rem;
+            margin-top: 19.1rem;
+
+        }
+
+        .p {
+            display: inline-block;
+
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 150%;
+
+            color: rgba(255, 255, 255, 0.7);
+
+            margin-top: 19.1rem;
+        }
+
+        
+
+        h1 {
+            @include h1;
+            margin-top: 3.4rem;
+        }
+
+        p {
+
+            @include text-18;
+
+            width: 36.5rem;
+            margin-top: 2.4rem;
+            
+        }
+
+        button {
+            width: 243px;
+            height: 48px;
+
+            background-color: transparent;
+
+            border: 1px solid #fff;
+            border-radius: 100px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+
+            color: #fff;
+
+            margin-top: 4rem;
+        }
+
+        
+    }
+
+    @include responsive (480px) {
+
+        max-height: 57.9rem;
+        background-image: url(../img/bg-mobile.svg);
+        margin-top: 8.8rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: none;
+            }
+
+            .p {
+                margin-top: 0;
+            }
+
+            h1 {
+                font-size: 4rem;
+                margin-top: 1.8rem;
+                width: 36.6rem;
+                height: 19.6rem;
+                text-align: center;
+            }
+
+            p {
+                margin-top: 2.8rem;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+.benefits {
+
+    width: 100%;
+    height: 87.2rem;
+
+    .container {
+
+        @include flex (row, flex-start, space-between);
+        padding: 0;
+        position: relative;
+
+        .benefits-content {
+
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                @include h2;
+                margin-top: 9.6rem;
+            }
+
+            h3 {
+                @include h3;
+                margin-top: 1rem;
+            }
+
+            ul {
+
+                max-width: 76rem;
+                margin-top: 10.4rem;
+
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+
+                    margin-right: 11.8rem;
+
+                    .img {
+                        max-width: 22px;
+                        max-height: 16px;
+
+                        margin-bottom: 2rem;
+                        border-bottom: 2px solid $bg-yellow;
+
+                        padding-bottom: 30px;
+
+                        img {
+                            width: 22px;
+                            height: 16px;
+                        }
+                    }
+
+                    h4 {
+                        @include h4;
+                        margin-bottom: 1.5rem;
+                        width: 24.3rem;
+                    }
+
+                    p {
+                        @include text-16;
+                        max-width: 25.9rem;
+                        max-height: 6.6rem;
+
+                        margin-bottom: 7rem;
+                    }
+                }
+            }
+
+        }
+
+        .credit-card {
+            position: absolute;
+            top: -68px;
+            right: -7px;
+        }
+
+
+    }
+
+    @include responsive (480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 117.6rem;
+
+        margin-bottom: 8rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .benefits-content {
+
+                text-align: center;
+
+                h2 {
+                   margin-top: 8rem;
+                }
+
+                h3 {
+                    margin-top: 1.5rem;
+                }
+
+                ul {
+                    margin-top: 7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        margin: 0;
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .img {
+                            width: 30px;
+                            height: 30px;
+
+                            img {
+                                width: 22px;
+                                height: 16px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+            
+        }
+    }
+
+
+}
+
+.bank {
+    width: 100%;
+
+    background-color: #fafafa;
+
+    .container {
+        @include flex (column, flex-start, space-between);
+        padding: 0;
+        position: relative;
+
+        padding-bottom: 13.4rem;
+
+        background-color: #fafafa;
+
+        .top-content {
+            @include flex (row, center, space-between);
+            width: 100%;
+
+            margin-top: 10.9rem;
+
+            .content-left {
+                h2 {
+                    @include h2;
+                }
+
+                h3 {
+                    @include h3;
+                }
+            }
+
+            .content-right {
+                @include flex (row, center, space-between);
+
+                width: 59.2rem;
+                height: 7.2rem;
+
+                border: 1px solid rgba(196, 196, 196, 1);
+                border-radius: 120px;
+
+                padding: 0 1rem;
+
+                & div:first-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 26.9rem;
+                    height: 5.6rem;
+
+                    background-color: #000;
+
+                    border-radius: 120px;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+
+                        line-height: 2.0rem;
+                        
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        letter-spacing: 0.02em;
+                        
+                        color: #FFFFFF;
+                    }
+
+                }
+
+                & div:last-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 26.9rem;
+                    height: 5.6rem;
+
+                    background-color: #fafafa;
+
+                    border-radius: 120px;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+
+                        line-height: 2.0rem;
+
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        letter-spacing: 0.02em;
+
+                        color: #616161;
+                    }
+
+                }
+            }
+        }
+
+        .bottom-content {
+            width: 121.6rem;
+            height: 42.5rem;
+
+            background-color: #000;
+            background-image: url(../img/img-conta.svg);
+
+            border-radius: 10px;
+
+            margin-top: 10.5rem;
+
+            position: relative;
+
+            .content-right {
+
+                margin-top: 9.7rem;
+                margin-left: 10rem;
+
+                & p:first-child {
+
+                    width: 21rem; 
+                    height: 6.2rem;
+                    font-family: Montserrat;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 130%;
+    
+                    letter-spacing: -0.03em;
+    
+                    color: #FFF;
+
+                    margin-bottom: 2rem;
+                }
+    
+                p{
+                    width: 34.1rem;
+                    height: 7.2rem;
+    
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    
+                    color: rgba(255, 255, 255, 0.7);
+
+                    margin-bottom: 4rem;
+    
+                }
+    
+                .nfc {
+    
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    width: 17rem;
+    
+                    span {
+                                
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 150%;
+                        
+                        color: #FAFAFA;
+                    }
+        
+                }
+
+            }
+
+            .black-card {
+                position: absolute;
+                top: -80px;
+                right: 230px;
+            }
+    
+            .c6-business {
+                position: absolute;
+                bottom: 53px;
+                right: 70px;
+            }
+
+            .cellphone-bank {
+                display: none;
+            }
+
+        }
+
+    }
+
+    @include responsive (480px) {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-bottom: 8rem;
+
+            .top-content {
+                flex-direction: column;
+
+                .content-left {
+                    text-align: center;
+
+                    h2 {
+                        font-size: 3.2rem;
+                    }
+
+                    h3 {
+                        margin-top: 1rem;
+                        font-size: 2.4rem;
+                    }
+                }
+
+                .content-right {
+                    margin-top: 4.6rem;
+
+                    width: 38.2rem;
+                    height: 6.4rem;
+
+                    & div:first-child {
+                        width: 17.1rem;
+                        height: 4.8rem;
+
+                        p {
+                            font-size: 1.4rem;
+                        }
+                        
+                    }
+
+                    & div:last-child {
+                        width: 17.1rem;
+                        height: 4.8rem;
+
+                        p {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+
+            .bottom-content {
+                margin-top: 4.8rem;
+
+                display: flex;
+                flex-direction: column;
+
+                width: 36.6rem;
+                height: 63.2rem;
+
+                background-image: linear-gradient(98.6deg, #020203 7.61%, #242424 96.26%);
+                border-radius: 12px;
+
+                .content-right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    margin: 6.4rem 0 0 0;
+
+                    text-align: center;
+
+                    & p:first-child {
+                        font-size: 2.2rem;
+                    } 
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+
+                }
+
+                .black-card {
+                    position: absolute;
+                    top: 255px;
+                    left: -50px;
+
+                    z-index: 2;
+                }
+        
+                .c6-business {
+                    display: none;
+                }
+
+                .cellphone-bank {
+                    display: block;
+                    position: absolute;
+
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

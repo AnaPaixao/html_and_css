@@ -1,0 +1,38 @@
+@media(max-width: 480px) {
+
+    main img.hills {
+        height: 25vh;
+    }
+
+    main h1 {
+        text-align: center;
+    }
+
+    main .countdown {
+        width: 340px;
+    }
+
+    main .countdown div p {
+        font-size: 8px;
+    }
+
+    main .countdown div .div-up {
+        width: 70px;
+        height: 35px;
+    }
+
+    main .countdown div .div-down {
+        width: 70px;
+        height: 35px;
+    }
+
+    main .countdown div span {
+        font-size: 35px;
+        top: 12px;
+    }
+
+    main .icons {
+        bottom: 45px;
+    }
+
+}

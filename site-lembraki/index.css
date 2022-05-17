@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.border-bottom {
+    border-bottom: solid #862929 2px;
+}
+
+.main-container {
+    max-width: 100vw;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.3);
+    border-bottom: 5px solid #862929;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+}
+
+/*========== PRODUCT ============*/
+
+.product {
+    display: flex;
+    margin: 0 auto;
+    padding: 80px 10px;
+    justify-content: space-around;
+}
+
+.product div {
+    margin-top: 30px;
+}
+
+.product .description img.logo-site {
+    width: 420px;
+    margin-bottom: 40px;
+}
+
+.product .description p {
+    margin-bottom: 20px;
+}
+
+.product .description #temporario {
+    width: 580px;
+}
+
+.product .description img {
+    width: 250px;
+
+}
+
+
+/*========== TEAM ============*/
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    background-color: #BC4242;
+    border-bottom: 5px solid #862929;
+    padding: 60px;
+}
+
+.team div {
+    text-align: center;
+}
+
+.team div img {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+
+.team div p:nth-child(2) {
+    font-weight: bold;
+}
+
+.team div p:nth-child(2)::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #FFF;
+    margin: 8px auto;
+}
+
+/*===========FORM=============*/
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    border-bottom: 5px solid #862929;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.form form .rating p {
+    margin-right: 20px;
+}
+
+.form form .rating img {
+    margin-right: 10px;
+}
+
+.form .feedback-message {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.form .feedback-message p {
+    width: 360px;
+    text-align: center;
+}
+
+.form .feedback-message p:after,
+.form .feedback-message p:before  {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 3px;
+    background: #862929;
+    margin: 60px auto 8px auto;
+}
+
+.form .feedback-message p:before {
+    margin: 8px auto 60px auto;
+}
+
+.form form label {
+    margin-bottom: 8px;
+}
+
+.form form input {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 35px;
+}
+
+.form form input, .form form textarea {
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #000;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.form form textarea {
+    margin-bottom: 20px;
+}
+
+.form button {
+    width: 130px;
+    height: 40px;
+    background-color: #862929;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #BC4242;
+}
+
+/*============ FOOTER ==============*/
+
+footer {
+    background-color: #BC4242;
+    height: 100px;
+    padding: 30px 150px;
+    color: #FFF;
+    font-weight: lighter;
+}
+
+footer p:nth-child(1) {
+    margin-bottom:2px
+}

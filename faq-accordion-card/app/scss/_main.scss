@@ -1,0 +1,94 @@
+main {
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 560px;
+    background: #FFF;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+main div {
+    width: 500px;
+    height: 560px;
+}
+
+main > img {
+    position: absolute;
+    top: 240px;
+    z-index: 10;
+    left: -93px; 
+}
+
+main .imgs {
+    position: relative;
+    overflow-y: hidden; 
+    z-index: 5;
+}
+
+
+main .imgs .woman {
+    position: absolute;
+    top: 105px;
+    left: -85px;
+    z-index: 8;
+}
+
+main .imgs .bg {
+    position: absolute;
+    top: -295px;
+    left: -590px;
+}
+
+
+main .faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+
+}
+
+main .faq h1 {
+    color: $veryDarkDesaturatedBlue;
+}
+
+main .faq ul li {
+    padding: 15px 15px 15px 0px;
+    border-bottom:  1px solid $lightGrayishBlue;
+    color: $veryDarkGrayishBlue;
+    font-size: 14px;
+}
+
+main .faq ul li:hover {
+    color: $softRed;
+    cursor: pointer;
+}
+
+main .faq ul li img{
+    width: 10px;
+    height: 7px;
+    margin-left: 20px;
+}
+
+main .faq ul li p:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+main .faq ul li p:nth-child(2) {
+    display: none;
+    color: $darkGrayishBlue;
+    font-size: $font-sm;
+    margin-top: 15px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Lembraki</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <a href="#product">O Produto</a>
+                <a href="#team">A Equipe</a>
+                <img src="./img/logo.svg" alt="Logo lembraki">
+                <a href="#form">Deixe um feedback</a>
+                <a href="#footer">Contato</a>
+            </nav>
+        </header>
+
+        <section class="product" id="product">
+            <div class="description">
+                <img src="./img/logo-site.svg" alt="" class="logo-site">
+                <p>Para aqueles que procuram um método de estudo eficaz. 
+                </p>
+                <p id="temporario">Nosso aplicativo tem como objetivo ajudar as pessoas que 
+                    desejam aplicar o método de estudo atravez de flash cards.</p>
+                <img src="./img/decks.svg" alt="">
+                <img src="./img/menu-cards.svg" alt="">
+            </div>
+            <div>
+                <img src="./img/img-site.svg" alt="">
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div>
+                <img src="./img/team/bulbasaur.png" alt="">
+                <p>Ana Paixão</p>
+                <p>Técnico de informática</p>
+            </div>
+
+            <div>
+                <img src="./img/team/charmander.png" alt="">
+                <p>Cristian Loetscherr</p>
+                <p>Técnico de informática</p>
+            </div>
+
+            <div>
+                <img src="./img/team/squirtle.png" alt="">
+                <p>Daniel Deonilio</p>
+                <p>Técnico de informática</p>
+            </div>
+
+            <div>
+                <img src="./img/team/eevee.png" alt="">
+                <p>Erick Rangel</p>
+                <p>Técnico de informática</p>
+            </div>
+            <div>
+                <img src="./img/team/pikachu.png" alt="">
+                <p>William Rodrigues</p>
+                <p>Técnico de informática</p>
+            </div>
+        </section>
+
+        <section class="form" id="form">
+            <form action="">
+                
+                <div class="rating">
+                    <p>Pontuação</p>
+                    <img src="/img/empty-star.svg" alt="estrela-pontuação" class="star">
+                    <img src="/img/empty-star.svg" alt="estrela-pontuação" class="star">
+                    <img src="/img/empty-star.svg" alt="estrela-pontuação" class="star">
+                    <img src="/img/empty-star.svg" alt="estrela-pontuação" class="star">
+                    <img src="/img/empty-star.svg" alt="estrela-pontuação" class="star">
+                </div>
+                
+                <label for="name">Nome</label>
+                <input type="text" name="name">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="message">Mensagem</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+                <button>Enviar</button>
+              </form>
+              <div class="feedback-message">
+                  <p>
+                    Ajude nossa equipe enviando um feedback do nosso produto 
+                  </p>
+              </div>
+        </section>
+
+        <footer id="footer">
+            <p>Entre em contato</p>
+            <p>lembraki@gmail.com</p>
+        </footer>
+
+
+    </div>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

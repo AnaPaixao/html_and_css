@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <h1>Calculadora de Média</h1>
+    <p>Descubra qual a sua média de nota de todas as provas!</p>
+    <img src="./img/imersao-dev.svg" alt="Logo Imersão Dev" class="imersao-dev">
+    <img src="./img/alura-logo.svg" alt="Logo da Alura" class="logo-alura">
+    
+
+    <div class="container">
+        <div class="grades">
+            <form action="">
+                
+                <h3>Bimestre</h3>
+
+                <div class="form-input"> 
+                    <span>1°</span>
+                    <input type="number">
+                </div>
+                
+                <div class="form-input">
+                    <span>2°</span>
+                    <input type="number">
+                </div>
+                
+                <div class="form-input"> 
+                    <span>3°</span>
+                    <input type="number">
+                </div>
+                
+                <div class="form-input">
+                    <span>4°</span>
+                    <input type="number">
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <div>
+                <h3>Resultado</h3>
+                <span></span>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="openModal">
+        <img src="./img/info.svg" alt="Info" class="info">
+    </a>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Projeto Calculadora de Média - Imersão Dev</h3>
+            <p>
+                Esse projeto foi feito com base na primeira aula da Imersão Dev, 
+                onde o objetivo era criar uma calculadora de média. Eu queria criar 
+                algo mais caprichado já que nunca tinha feito um projeto assim antes, 
+                então juntei todo o meu conhecimento para criar algo maneiro, espero 
+                que tenham gostado.
+            </p>
+        </div>
+    </div>
+
+    <p class="obs">OBS.: Para passar você precisa ter a média 6.0</p>
+
+    <script src="./main.js"></script>
+</body>
+</html>
